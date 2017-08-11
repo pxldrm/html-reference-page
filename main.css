@@ -1,0 +1,766 @@
+/*
+#################################################################
+
+		META
+
+#################################################################
+*/
+body {
+	padding: 50px;
+	font-family: "Courier New";
+	font-size: 22px;
+	background-color: #4682B4;	*/steel blue*/
+
+}
+
+.sololearn-background {
+	background-image: url("https://3.bp.blogspot.com/-JGEXuJY4Htk/Vz3LC8zAVwI/AAAAAAAAPzU/UboQ3te1i-0_OvYZtAT__nuuL1ItyZRpgCLcB/s1600/Logo-Sololearn.jpg");
+	background-attachment: fixed;
+	background-size: 128px 128px;
+}
+
+.html-background {
+	background-image: url("http://lh3.googleusercontent.com/zwwddqxgFlP14DlucvBV52RUMA-cV3vRvmjf-iWqxuVhYVmB-l8XN9NDirb0687DSw=w300");
+	background-attachment: fixed;
+	background-size: 128px 128px;
+}
+
+.css-background {
+	background-image: url("http://www.sololearn.com/uploads/css_logo.png");
+	background-attachment: fixed;
+}
+/*
+#################################################################
+
+		COMMON
+
+#################################################################
+*/
+h1 {
+	text-align: center;
+	font-family: Florence, cursive;
+	text-shadow: 5px 2px 4px black;
+	color: #FF0000;	*/red*/
+}
+
+.section_title {
+	background-color: #F682B4;	*/steel blue*/
+}
+
+a {
+	color: blue;
+}
+
+#nav {
+	background: #F5DEB3;	*/wheat*/
+}
+
+.topofpage {
+	text-align: center;
+}
+
+table { 
+    display: table;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.contents th, td{
+	padding-right: 50px;
+	text-align: left;
+}
+
+.display_code {
+	white-space: pre-wrap;
+}
+
+.reference_header {
+	color: red;
+}
+
+.deprecated {
+	text-decoration: line-through;
+	color: red;
+}
+
+.ignore {
+	text-align: left;
+	color: black;
+	text-shadow: 0px 0px 0px black;
+}
+
+.inline {
+	display:  inline;
+}
+
+.example_heading {
+	text-align: left;
+	color: blue;
+	text-shadow: 0px 0px 0px black;
+}
+
+.bordered {
+	border-style:  solid;
+	border-width:  2px 2px 2px 2px;
+	padding:  10px;
+	margin-bottom:  20px;
+	background-color:  white;
+}
+
+/*
+#################################################################
+
+		SECTIONS
+
+#################################################################
+*/
+#section_1 {
+	height: 500px;
+	overflow: scroll;
+}
+
+#section_2 {
+	
+}
+
+#section_3 {
+	
+}
+
+#section_4 {
+	
+}
+
+#section_5 {
+	
+}
+
+#section_6 {
+	
+}
+
+#section_7 {
+	
+}
+
+#section_8 {
+	
+}
+
+#section_9 {
+	
+}
+
+#section_10 {
+	
+}
+
+/*
+#################################################################
+
+		EXAMPLES
+
+#################################################################
+*/
+.example_1 {
+	color: white;
+	background-color: grey;
+}
+
+.example_color_1 {
+	color: #0000FF;
+}
+
+.example_color_2 {
+	color: rgb(255,0,0);
+}
+
+#example_2 {
+	color: orange;
+	font-size: 150%;
+}
+
+#example_3 {
+	color: orange;
+	font-size: 200%;
+}
+
+.example_3 {
+	color: orange;
+	font-size: 200%;
+}
+
+.example_4 span {
+	color: pink;
+	background-color: grey;
+}
+/*#################################################################*/
+p.example_5 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+p.example_6 {
+	font-family: Halvetica, Arial, sans-serif;
+}
+
+p.example_7 {
+	font-family: "Courier New", Courier, monospace;
+}
+
+p.example_8 {
+	font-family: Florence, cursive;
+}
+
+p.example_9 {
+	font-family: Blippo, fantasy;
+}
+/*#################################################################*/
+p.small {
+	font-size: small;
+}
+
+p.medium {
+	font-size: medium;
+}
+
+p.large {
+	font-size: large;
+}
+
+p.x-large {
+	font-size: x-large;
+}
+
+p.px20 {
+	font-size: 20px;
+}
+
+p.px50 {
+	font-size: 50px;
+}
+
+p.em125 {
+	font-size: 1.25em;
+}
+
+p.em2 {
+	font-size: 2em;
+}
+/*#################################################################*/
+p.normal {
+	font-style: normal;
+}
+
+p.italic {
+	font-style: italic;
+}
+
+p.oblique {
+	font-style: oblique;
+}
+/*#################################################################*/
+p.bold {
+	font-weight: bold;
+}
+
+p.bolder {
+	font-weight: bolder;
+}
+
+p.value {
+	font-weight: 900;
+}
+/*#################################################################*/
+span.normal {
+	font-variant: normal;
+}
+
+span.small {
+	font-variant: small-caps;
+}
+/*#################################################################*/
+p.left {
+	text-align: left;
+}
+
+p.right {
+	text-align: right;
+}
+
+p.center {
+	text-align: center;
+}
+
+td.top {
+	vertical-align: top;
+}
+
+td.middle {
+	vertical-align: middle;
+}
+
+td.bottom {
+	vertical-align: bottom;
+}
+
+span.baseline {
+	vertical-align: baseline;
+}
+
+span.sub {
+	vertical-align: sub;
+}
+
+span.super {
+	vertical-align: super;
+}
+
+span.pixel {
+	vertical-align: -10px;
+}
+
+.main {
+	height: 150px;
+	widows: 400px;
+	background-color: LightSkyBlue;
+	display: inline-table;
+}
+
+.paragraph {
+	display: table-cell;
+	vertical-align: middle;
+}
+/*#################################################################*/
+p.none {
+	text-decoration: none;
+}
+
+span.inherit {
+	text-decoration: inherit;
+}
+
+p.overline {
+	text-decoration: overline;
+}
+
+p.underline {
+	text-decoration: underline;
+}
+
+p.line-through {
+	text-decoration: line-through;
+}
+/*#################################################################*/
+p.indent {
+	text-indent: 60px;
+}
+/*#################################################################*/
+h1.shadow {
+	color: blue;
+	font-size: 30pt;
+	text-shadow: 5px 2px 4px grey;
+	text-align: left;
+}
+
+h1.blur {
+	color: black;
+	font-size: 20pt;
+	text-shadow: rgba(0,0,255,1) -1px -2px 0.5em;
+	text-align: left;
+}
+/*#################################################################*/
+p.capitalize {
+	text-transform: capitalize;
+}
+
+p.uppercase {
+	text-transform: uppercase;
+}
+
+p.lowercase {
+	text-transform: lowercase;
+}
+/*#################################################################*/
+p.normal-spacing {
+	letter-spacing: normal;
+}
+
+p.positive-spacing {
+	letter-spacing: 4px;
+}
+
+p.negative-spacing {
+	letter-spacing: -1.5px;
+}
+
+p.normal-word-spacing {
+	word-spacing: normal;
+}
+
+p.px-spacing {
+	word-spacing: 30px;
+}
+
+p.negative-word-spacing {
+	word-spacing: -5px;
+}
+
+p.nowrap {
+	white-space: nowrap;
+}
+
+p.pre {
+	white-space: pre;
+}
+
+p.preline {
+	white-space: pre-line;
+}
+
+p.prewrap {
+	white-space: pre-wrap;
+}
+/*#################################################################*/
+p.border {
+	padding: 10px;
+	border: 5px solid green;
+}
+
+p.borderwidth {
+	padding: 10px;
+	border-style: solid;
+	border-width: 5px;
+}
+
+p.borderwidth2 {
+	padding: 10px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+p.bordercolor {
+	padding: 5px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: blue;
+}
+
+p.bordercolor2 {
+	padding: 5px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #FF6600;
+}
+
+p.bordercolor3 {
+	padding: 5px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgb(0,153,0);
+}
+
+p.noborder {
+	border-style: none;
+}
+
+p.dotted {
+	border-style: dotted;
+}
+
+p.dashed {
+	border-style: dashed;
+}
+
+p.double {
+	border-style: double;
+}
+
+p.groove {
+	border-style: groove;
+}
+
+p.ridge {
+	border-style: ridge;
+}
+
+p.inset {
+	border-style: inset;
+}
+
+p.outset {
+	border-style: outset;
+}
+
+p.hidden {
+	border-style: hidden;
+}
+/*#################################################################*/
+.div-example {
+	border: 5px solid green;
+	width: 180px;
+	height: 180px;
+}
+
+.div-example2 {
+	border: 5px solid green;
+	width: 100%;
+	height: 60px;
+}
+
+.div-example3 {
+	border: 5px solid green;
+	min-height: 200px;
+	max-width: 500px;
+}
+
+.div-example4 {
+	background-color: #4682B4; /*steel blue*/
+}
+
+.div-example5 {
+	background-color: LightGreen;
+}
+
+.div-example6 {
+	background-color: rgb(135,206,235);
+}
+
+.div-example7 {
+	width: 1488px;
+	height: 1262px;
+	background-image: url("img/frame-clipart.png")
+}
+
+.div-example8 {
+	padding: 30px;
+	background-image: url("img/scenery-clipart.png")
+}
+
+.div-example9 {
+	width: 640px;
+	height: 120px;
+	background-image: url("http://www.sololearn.com/uploads/css_logo.png");
+	background-repeat: repeat-x;
+}
+
+.div-example10 {
+	width: 120px;
+	height: 640px;
+	background-image: url("http://www.sololearn.com/uploads/css_logo.png");
+	background-repeat: repeat-y;
+}
+
+.div-example11 {
+	background-image: url("http://www.sololearn.com/uploads/css_logo.png");
+	background-repeat: repeat-x;
+}
+
+.div-example12 {
+	background-image: url("http://www.sololearn.com/uploads/css_logo.png");
+	background-repeat: inherit;
+	margin-top: 100px;
+	padding: 50px;
+}
+
+.div-example13 {
+	width: 500px;
+	height: 500px;
+	background-image: url("http://www.sololearn.com/uploads/css_logo.png");
+	background-attachment: fixed;
+}
+
+.div-example14 {
+	width: 250px;
+	height: 250px;
+	background-image: url("http://www.sololearn.com/uploads/css_logo.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+/*#################################################################*/
+ol.lower-alpha {
+	list-style-type: lower-alpha;
+}
+
+ul.circle {
+	list-style-type: circle;
+}
+
+ul.square {
+	list-style-type: square;
+}
+
+ul.img {
+	list-style-image: url("http://www.sololearn.com/images/bullet.jpg");
+	list-style-position: inside;
+}
+
+ul.img2 {
+	list-style-image: none;
+	list-style-position: outside;
+}
+/*#################################################################*/
+
+.table-example {
+	border-collapse: separate;
+	border-spacing: 20px 40px;
+}
+
+.table-example2 {
+	caption-side: top;
+}
+
+.table-example3 {
+	border-collapse: separate;
+	empty-cells: hide;
+}
+
+.table-example3 td {
+	border: 1px solid orange;
+}
+
+.table-example4 {
+	border-collapse: separate;
+	width: 100%;
+	border: 1px solid grey;
+	table-layout: auto;
+}
+
+.table-example5 {
+	border-collapse: separate;
+	width: 100%;
+	border: 1px solid grey;
+	table-layout: fixed;
+}
+/*#################################################################*/
+a:hover {
+	color: red;
+}
+
+a:link {
+    text-decoration: none;
+}
+/*#################################################################*/
+span.block {
+	display: block;
+}
+
+p.inline {
+	display: inline;
+}
+
+p.display-none {
+	display: none;
+}
+
+div.hidden {
+	visibility: hidden;
+}
+
+div.display-hidden {
+	display: none;
+}
+/*#################################################################*/
+p.position_static {
+	position: static;
+	top: 30px;
+	right: 5px;
+	color: red;
+}
+
+p.position_fixed {
+	position: fixed;
+	top: 30px;
+	right: 5px;
+	color: red;
+}
+
+p.position_relative {
+	border: 1px black solid;
+	height: 200px;
+}
+
+span.pos_relative {
+	background: green;
+	color: white;
+	position: relative;
+	top: 100px;
+	left: 50px;
+}
+/*#################################################################*/
+.float {
+	float: right;
+}
+
+.float2 {
+	float: left;
+	width: 120px;
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+/*#################################################################*/
+.overflow {
+	width: 150px;
+	height: 150px;
+	background-color: LightBlue;
+	float: left;
+}
+
+.overflow2 {
+	width: 150px;
+	height: 150px;
+	background-color: LightBlue;
+	float: left;
+	overflow: scroll;
+}
+
+.overflow3 {
+	width: 150px;
+	height: 150px;
+	background-color: LightBlue;
+	float: left;
+	overflow: hidden;
+}
+/*#################################################################*/
+.blue {
+	background-color: #8EC4D0;
+	margin-bottom: 15px;
+	width: 120px;
+	height: 120px;
+	color: #FFF;
+}
+
+.red {
+	background-color: #FF4D4D;
+	position: relative;
+	margin-bottom: 15px;
+	width: 120px;
+	height: 120px;
+	color: #FFF;
+	margin-top: -50px;
+	margin-left: 50px;
+}
+
+.blue2 {
+	z-index: 3;
+	position: relative;
+	background-color: #8EC4D0;
+	margin-bottom: 15px;
+	width: 120px;
+	height: 120px;
+	color: #FFF;
+}
+
+.red2 {
+	z-index: 2;
+	position: relative;
+	background-color: #FF4D4D;
+	width: 120px;
+	height: 120px;
+	color: #FFF;
+	margin-top: -50px;
+	margin-left: 50px;
+}
+/*#################################################################*/

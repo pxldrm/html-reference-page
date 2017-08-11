@@ -1,0 +1,2804 @@
+<!doctype html>
+<!--
+#################################################################
+
+        BASIC CSS REFERENCE PAGE
+
+        PXLDRM 06/12/2017
+
+#################################################################
+-->
+<html>
+    <head>
+        <title>Web Development Reference Site</title>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body class="css-background">
+<!--
+#################################################################
+
+        TITLE
+
+#################################################################
+--><hr />
+        <div id="title">
+            <h1>Basic CSS</h1>
+        </div>
+<!--
+#################################################################
+
+        NAVIGATION PANE
+
+#################################################################
+--><hr />
+        <div id="nav">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Basic HTML.html">Basic HTML</a></li>
+                <li>Basic CSS</li>
+            </ul>
+        </div>
+<!--
+#################################################################
+
+        CONTENTS PANE
+
+#################################################################
+--><hr />
+        <div id="nav">
+<a href="Basic CSS.html#"></a>
+            <h1 class="example_heading">Contents</h1>
+            <table class="Contents">
+                <tr>
+                    <td>1. <a href="Basic CSS.html#section_1">Colors</a></td>
+                    <td>11.<a href="Basic CSS.html#section_11">Alignment</a></td>
+                    <td>21.<a href="Basic CSS.html#section_21">Link Styles</a></td>
+                </tr>
+                <tr>
+                    <td>2. <a href="Basic CSS.html#section_2">Type Selectors</a></td>
+                    <td>12.<a href="Basic CSS.html#section_12">Text Decoration</a></td>
+                    <td>22.<a href="Basic CSS.html#section_22">Display Styles</a></td>
+                </tr>
+                <tr>
+                    <td>3. <a href="Basic CSS.html#section_3">ID Selectors</a></td>
+                    <td>13.<a href="Basic CSS.html#section_13">Text Indent</a></td>
+                    <td>23.<a href="Basic CSS.html#section_23">Element Position</a></td>
+                </tr>
+                <tr>
+                    <td>4. <a href="Basic CSS.html#section_4">Class Selectors</a></td>
+                    <td>14.<a href="Basic CSS.html#section_14">Text Shadow</a></td>
+                    <td>24.<a href="Basic CSS.html#section_24">Float</a></td>
+                </tr>
+                <tr>
+                    <td>5. <a href="Basic CSS.html#section_5">Descendent Selectors</a></td>
+                    <td>15.<a href="Basic CSS.html#section_15">Text Transform</a></td>
+                    <td>25.<a href="Basic CSS.html#section_25">Overflow</a></td>
+                </tr>
+                <tr>
+                    <td>6. <a href="Basic CSS.html#section_6">Font Families</a></td>
+                    <td>16.<a href="Basic CSS.html#section_16">Spacing</a></td>
+                    <td>26.<a href="Basic CSS.html#section_26">Z-Index</a></td>
+                </tr>
+                <tr>
+                    <td>7. <a href="Basic CSS.html#section_7">Font Sizes</a></td>
+                    <td>17.<a href="Basic CSS.html#section_17">Borders</a></td>
+                </tr>
+                <tr>
+                    <td>8. <a href="Basic CSS.html#section_8">Font Styles</a></td>
+                    <td>18.<a href="Basic CSS.html#section_18">Element Attributes</a></td>
+                </tr>
+                <tr>
+                    <td>9. <a href="Basic CSS.html#section_9">Font Weights</a></td>
+                    <td>19.<a href="Basic CSS.html#section_19">Lists</a></td>
+                </tr>
+                <tr>
+                    <td>10.<a href="Basic CSS.html#section_10">Font Variants</a></td>
+                    <td>20.<a href="Basic CSS.html#section_20">Tables</a></td>
+                </tr>
+            </table>
+        </div>
+<!--
+#################################################################
+
+        SECTION 1: COLORS
+
+#################################################################
+--><hr />
+        <div class="section_title"><h1>Colors</h1></div>
+
+        <div id="section_1">
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+h1 {
+    color:blue;
+}
+
+<span class="reference_header">HTML:</span>
+&lth1&gtBlue Heading&lt/h1&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+                
+                <h1 class="example_heading">Blue Heading</h1>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p {
+    color:white;
+    background-color:grey;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gtThis is a paragraph with white text and a grey background.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="example_1">This is a paragraph with white text and a grey background.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p {
+    color:#0000FF;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gtThis is a paragraph with blue text.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="example_color_1">This is a paragraph with blue text.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p {
+    color:rgb(255,0,0);
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gtThis is a paragraph with red text.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="example_color_2">This is a paragraph with red text.</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 2: TYPE SELECTORS
+
+#################################################################
+--><hr />
+        <div id="section_2">
+            <h1>Type Selectors</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p {
+    color:orange;
+    font-size:150%;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gtThis is a paragraph.&lt/p&gt
+&ltp&gtThis is another paragraph.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p id="example_2">This is a paragraph.</p>
+                <p id="example_2">This is another paragraph.</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 3: ID SELECTORS
+
+#################################################################
+--><hr />
+        <div id="section_3">
+            <h1>ID Selectors</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+#example_3 {
+    color:orange;
+    font-size:200%;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp id="example_3"&gtThis is a paragraph.&lt/p&gt
+&ltp&gtThis is another paragraph.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p id="example_3">This is a paragraph.</p>
+                <p>This is another paragraph.</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 4: CLASS SELECTORS
+
+#################################################################
+--><hr />
+        <div id="section_4">
+            <h1>Class Selectors</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.example_3 {
+    color:orange;
+    font-size:200%;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="example_3"&gtThis is a paragraph.&lt/p&gt
+&ltp&gtThis is another paragraph.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="example_3">This is a paragraph.</p>
+                <p>This is another paragraph.</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 5: DESCENDENT SELECTORS
+
+#################################################################
+--><hr />
+        <div id="section_5">
+            <h1>Descendent Selectors</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.example_4 span {
+    color:pink;
+    background-color:gray;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="example_4"&gtThis is a &ltspan&gtparagraph.&lt/span&gt&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="example_4">This is a <span>paragraph.</span></p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 6: FONT FAMILIES
+
+#################################################################
+--><hr />
+        <div id="section_6">
+            <h1>Font Families</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+font.example_5 {
+    font-family:"Times New Roman", Times, serif;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="example_5"&gtThis is a paragraph shown in serif font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="example_5">This is a paragraph shown in serif font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.example_6 {
+    font-family:Halvetica, Arial, sans-serif;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="example_6"&gtThis is a paragraph shown in sans-serif font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="example_6">This is a paragraph shown in sans-serif font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.example_7 {
+    font-family:"Courier New", Courier, monospace;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="example_7"&gtThis is a paragraph shown in monospace font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="example_7">This is a paragraph shown in monospace font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.example_8 {
+    font-family:Florence, cursive;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="example_8"&gtThis is a paragraph shown in cursive font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="example_8">This is a paragraph shown in cursive font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.example_9 {
+    font-family:Blippo, fantasy;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="example_9"&gtThis is a paragraph shown in fantasy font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="example_9">This is a paragraph shown in fantasy font.</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 7: FONT SIZES
+
+#################################################################
+--><hr />
+        <div id="section_7">
+            <h1>Font Sizes</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.small {
+    font-size:small;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="small"&gtThis is a paragraph shown in small font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="small">This is a paragraph shown in small font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.medium {
+    font-size:medium;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="medium"&gtThis is a paragraph shown in medium font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="medium">This is a paragraph shown in medium font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.large {
+    font-size:large;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="large"&gtThis is a paragraph shown in large font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="large">This is a paragraph shown in large font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.x-large {
+    font-size:x-large;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="x-large"&gtThis is a paragraph shown in x-large font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="x-large">This is a paragraph shown in x-large font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.px20 {
+    font-size:20px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="px20"&gtThis is a paragraph shown in 20px font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="px20">This is a paragraph shown in 20px font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.px50 {
+    font-size:50px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="px50"&gtThis is a paragraph shown in 50px font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="px50">This is a paragraph shown in 50px font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.em125 {
+    font-size:1.25em;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="em125"&gtThis is a paragraph shown in 1.25em font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="em125">This is a paragraph shown in 1.25em font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.em2 {
+    font-size:2em;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="em2"&gtThis is a paragraph shown in 2em font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="em2">This is a paragraph shown in 2em font.</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 8: FONT STYLES
+
+#################################################################
+--><hr />
+        <div id="section_8">
+            <h1>Font Styles</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.normal {
+    font-style:normal;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="normal"&gtThis is a paragraph shown in normal font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="normal">This is a paragraph shown in normal font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.italic {
+    font-style:italic;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="italic"&gtThis is a paragraph shown in italic font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="italic">This is a paragraph shown in italic font.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.oblique {
+    font-style:oblique;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="oblique"&gtThis is a paragraph shown in oblique font.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="oblique">This is a paragraph shown in oblique font.</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 9: FONT WEIGHTS
+
+#################################################################
+--><hr />
+        <div id="section_9">
+            <h1>Font Weights</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.light {
+    font-weight:lighter;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="light"&gtThis is a paragraph shown in lighter weight.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="light">This is a paragraph shown in lighter weight.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.bold {
+    font-weight:bold;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="bold"&gtThis is a paragraph shown in bold weight.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="bold">This is a paragraph shown in bold weight.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.bolder {
+    font-weight:bolder;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="bolder"&gtThis is a paragraph shown in bolder weight.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="bolder">This is a paragraph shown in bolder weight.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.value {
+    font-weight:900;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="value"&gtThis is a paragraph shown in 900 weight.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="value">This is a paragraph shown in 900 weight.</p>
+            </div>          
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 10: FONT VARIANTS
+
+#################################################################
+--><hr />
+        <div id="section_10">
+            <h1>Font Variants</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+span.normal {
+    font-variant:normal;
+}
+
+<span class="reference_header">HTML:</span>
+&ltspan class="normal"&gtFont variant set to normal.&lt/span&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <span class="normal">Font variant set to normal.</span>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+span.small {
+    font-variant:small-caps;
+}
+
+<span class="reference_header">HTML:</span>
+&ltspan class="small"&gtFont variant set to small-caps.&lt/span&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <span class="small">Font variant set to small-caps.</span>
+            </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 11: ALIGNMENT  
+
+#################################################################
+--><hr />
+        <div id="section_11">
+            <h1>Alignment</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.left {
+    text-align:left;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="left"&gtThis paragraph is aligned to the &ltstrong&gtleft&lt/strong&gt.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="left">This paragraph is aligned to the <strong>left</strong>.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.right {
+    text-align:right;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="right"&gtThis paragraph is aligned to the &ltstrong&gtright&lt/strong&gt.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="right">This paragraph is aligned to the <strong>right</strong>.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.center {
+    text-align:center;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="center"&gtThis paragraph is aligned to the &ltstrong&gtcenter&lt/strong&gt.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="center">This paragraph is aligned to the <strong>center</strong>.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+td.top {
+    vertical-align:top;
+}
+td.middle {
+    vertical-align:middle;
+}
+td.bottom {
+    vertical-align:bottom;
+}
+
+<span class="reference_header">HTML:</span>
+&lttable border="1" cellpadding="2" cellspacing="0" style="height:150px;"&gt
+    &lttr&gt
+        &lttd class="top"&gtTop&lt/td&gt
+        &lttd class="middle"&gtMiddle&lt/td&gt
+        &lttd class="bottom"&gtBottom&lt/td&gt
+    &lt/tr&gt
+&lt/table&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <table border="1" cellpadding="2" cellspacing="0" style="height:150px;">
+                    <tr>
+                        <td class="top">Top</td>
+                        <td class="middle">Middle</td>
+                        <td class="bottom">Bottom</td>
+                    </tr>
+                </table>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+span.baseline {
+    vertical-align:baseline;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gtThis is an &ltspan class="baseline"&gtinline text&lt/span&gt example.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p>This is an <span class="baseline">inline text</span> example.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+span.sub {
+    vertical-align:sub;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gtThis is a &ltspan class="sub"&gtsub line text&lt/span&gt example.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p>This is a <span class="sub">sub line text</span> example.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+span.super {
+    vertical-align:super;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gtThis is a &ltspan class="super"&gtsuper line text&lt/span&gt example.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p>This is a <span class="super">super line text</span> example.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+span.pixel {
+    vertical-align:-10px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gtThis is a &ltspan class="pixel"&gtpixel&lt/span&gt example.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p>This is a <span class="pixel">pixel</span> example.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.main {
+    height:150px;
+    widows:400px;
+    background-color:LightSkyBlue;
+    display:inline-table;
+}
+.paragraph {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="main"&gt
+    &ltdiv class="paragraph"&gt
+        This text is aligned to the middle.
+    &lt/div&gt
+&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="main">
+                    <div class="paragraph">
+                        This text is aligned to the middle.
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 12: TEXT DECORATION
+
+#################################################################
+--><hr />
+        <div id="section_12">
+            <h1>Text Decoration</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.none {
+    text-decoration:none;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="none"&gtThis is default style of the text (none)&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="none">This is default style of the text (none)</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.overline {
+    text-decoration:overline;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="overline"&gtThis is overlined text&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="overline">This is overlined text</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.underline {
+    text-decoration:underline;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="underline"&gtThis is underlined text&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="underline">This is underlined text</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.line-through {
+    text-decoration:line-through;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="line-through"&gtThis is lined-through text&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="line-through">This is lined-through text</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+span.inherit {
+    text-decoration:inherit;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="underline"&gt&ltspan class="inherit"&gtThis text inherits the decoration of the parent.&lt/span&gt&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="underline"><span class="inherit">This text inherits the decoration of the parent.</span></p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 13: TEXT INDENT
+
+#################################################################
+--><hr />
+        <div id="section_13">
+            <h1>Text Indent</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.indent {
+    text-indent:60px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="indent"&gtThis is an example of &ltstrong&gttext-indent&lt/strong&gt property. The first line of our text is indented to the right by 60px. Besides pixels you can also use other measurement units, like pt, cm, em, etc.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="indent">This is an example of <strong>text-indent</strong> property. The first line of our text is indented to the right by 60px. Besides pixels you can also use other measurement units, like pt, cm, em, etc.</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 14: TEXT SHADOW
+
+#################################################################
+--><hr />
+        <div id="section_14">
+            <h1>Text Shadow</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+h1 {
+    color:blue;
+    font-size:30pt;
+    text-shadow:5px 2px 4px grey;
+}
+
+<span class="reference_header">HTML:</span>
+&lth1&gtText-shadow Example&lt/h1&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <h1 class="shadow">Text-shadow Example</h1>
+            </div>
+        </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+h1 {
+    font-size:20pt;
+    text-shadow:rgba(0,0,255,1) -1px -2px 0.5em;
+    text-align:left;
+}
+
+<span class="reference_header">HTML:</span>
+&lth1&gtText-shadow With Blur Effect&lt/h1&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <h1 class="blur">Text-shadow With Blur Effect</h1>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 15: TEXT TRANSFORM
+
+#################################################################
+--><hr />
+        <div id="section_15">
+            <h1>Text Transform</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.capitalize {
+    text-transform:capitalize;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="capitalize"&gtThe value capitalize transforms the first character in each word to uppercase; all other characters remain unaffected.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="capitalize">The value capitalize transforms the first character in each word to uppercase; all other characters remain unaffected.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.uppercase {
+    text-transform:uppercase;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="uppercase"&gtThis value transforms all characters to uppercase.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="uppercase">This value transforms all characters to uppercase.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.lowercase {
+    text-transform:lowercase;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="lowercase"&gtThis value transforms all characters to lowercase.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="lowercase">This value transforms all characters to lowercase.</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 16: SPACING
+
+#################################################################
+--><hr />
+        <div id="section_16">
+            <h1>Spacing</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.normal-spacing {
+    letter-spacing:normal;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="normal-spacing"&gtThis paragraph has no additional letter-spacing applied.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="normal-spacing">This paragraph has no additional letter-spacing applied.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.positive-spacing {
+    letter-spacing:4px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="positive-spacing"&gtThis paragraph is letter-spaced at 4px.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="positive-spacing">This paragraph is letter-spaced at 4px.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.negative-spacing {
+    letter-spacing:-1.5px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="negative-spacing"&gtThis paragraph is letter-spaced at -1.5px.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="negative-spacing">This paragraph is letter-spaced at -1.5px.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.normal-word-spacing {
+    word-spacing:normal;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="normal-word-spacing"&gtThis paragraph has no additional word-spacing applied.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="normal-word-spacing">This paragraph has no additional word-spacing applied.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.px-spacing {
+    word-spacing:30px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="px-spacing"&gtThis paragraph is word-spaced at 30px.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="px-spacing">This paragraph is word-spaced at 30px.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.negative-word-spacing {
+    word-spacing:-5px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="negative-word-spacing"&gtThis paragraph is word-spaced at -5px.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="negative-word-spacing">This paragraph is word-spaced at -5px.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.nowrap {
+    white-space:nowrap;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="nowrap"&gt
+    This paragraph has         multiple spaces
+    and
+    a line break, but it will be ignored, as we
+    used the nowrap value.
+&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+<p class="nowrap">
+    This paragraph has         multiple spaces
+    and
+    a line break, but it will be ignored, as we
+    used the nowrap value.
+</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.pre {
+    white-space:pre;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="pre"&gt
+    In the markup we have multiple         spaces
+    and a line break.
+&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+<p class="pre">
+    In the markup we have multiple         spaces
+    and a line break.
+</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.preline {
+    white-space:pre-line;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="preline"&gt
+    In the markup we have multiple             spaces
+    and a line break, but in the result multiple
+    spaces are ignored.
+&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+<p class="preline">
+    In the markup we have multiple             spaces
+    and a line break, but in the result multiple
+    spaces are ignored.
+</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.prewrap {
+    white-space:pre-wrap;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="prewrap"&gt
+    In the markup we have             multiple
+    spaces and a line break. Just like 'pre' but will wrap if longer than its container.
+&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+<p class="prewrap">
+    In the markup we have             multiple
+    spaces and a line break. Just like 'pre' but will wrap if longer than its container.
+</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 17: BORDERS
+
+#################################################################
+--><hr />
+        <div id="section_17">
+            <h1>Borders</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.border {
+    padding:10px;
+    border:5px solid green;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="border"&gtThis is an example of a solid border.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="border">This is an example of a solid border.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.borderwidth {
+    padding:10px;
+    border-style:solid;
+    border-width:5px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="borderwidth"&gtBorder width of this paragraph is set to 5px.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="borderwidth">Border width of this paragraph is set to 5px.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.borderwidth2 {
+    padding:10px;
+    border-style:solid;
+    border-width:2px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="borderwidth2"&gtBorder width of this paragraph is set to 2px.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="borderwidth2">Border width of this paragraph is set to 2px.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.bordercolor {
+    padding:5px;
+    border-style:solid;
+    border-width:10px;
+    border-color:blue;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="bordercolor"&gtBorder color has been created using &ltstrong&gtcolor name.&lt/strong&gt&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="bordercolor">Border color has been created using <strong>color name.</strong></p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.bordercolor2 {
+    padding:5px;
+    border-style:solid;
+    border-width:10px;
+    border-color:#FF6600;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="bordercolor2"&gtBorder color has been created using &ltstrong&gthex values.&lt/strong&gt&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="bordercolor2">Border color has been created using <strong>hex values.</strong></p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.bordercolor3 {
+    padding:5px;
+    border-style:solid;
+    border-width:10px;
+    border-color:rgb(0,153,0);
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="bordercolor3"&gtBorder color has been created using &ltstrong&gtrgb values.&lt/strong&gt&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="bordercolor3">Border color has been created using <strong>rgb values.</strong></p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.noborder {
+    border-style:none;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="noborder"&gtThis paragraph has no border.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="noborder">This paragraph has no border.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.dotted {
+    border-style:dotted;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="dotted"&gtThis is a dotted border.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="dotted">This is a dotted border.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.dashed {
+    border-style:dashed;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="dashed"&gtThis is a dashed border.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="dashed">This is a dashed border.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.double {
+    border-style:double;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="double"&gtThis is a double border.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="double">This is a double border.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.groove {
+    border-style:groove;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="groove"&gtThis is a groove border.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="groove">This is a groove border.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.ridge {
+    border-style:ridge;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="ridge"&gtThis is a ridge border.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="ridge">This is a ridge border.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.inset {
+    border-style:inset;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="inset"&gtThis is an inset border.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="inset">This is an inset border.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.outset {
+    border-style:outset;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="outset"&gtThis is an outset border.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="outset">This is an outset border.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.hidden {
+    border-style:hidden;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="hidden"&gtThis is a hidden border.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="hidden">This is a hidden border.</p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 18: ELEMENT ATTRIBUTES
+
+#################################################################
+--><hr />
+        <div id="section_18">
+            <h1>Element Attributes</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example {
+    border:5px solid green;
+    width:90px;
+    height:90px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example"&gtThe total width and height of this element is 180px.&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example">The total width and height of this element is 180px.</div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example2 {
+    border:5px solid green;
+    width:100%;
+    height:60px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example2"&gtThe total width of this element is 100% and height is 60px.&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example2">The total width of this element is 100% and height is 60px.</div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example3 {
+    border:5px solid green;
+    min-height:200px;
+    max-width:500px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example3"&gtThe total maximum width of this element is 500px and minimum height is 200px.&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example3">The total maximum width of this element is 500px and minimum height is 200px.</div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example4 {
+    background-color:#4682B4; /*steel blue*/
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example4"&gtThe background color of this section is set to SteelBlue.&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example4">The background color of this section is set to SteelBlue.</div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example5 {
+    background-color:LightGreen;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example5"&gtThe background color of this section is set to LightGreen.&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example5">The background color of this section is set to LightGreen.</div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example6 {
+    background-color:rgb(135,206,235);
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example6"&gtThe background color of this section is set to LightBlue.&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example6">The background color of this section is set to LightBlue.</div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example7 {
+    width:1488px;
+    height:1262px;
+    background-image:url("img/frame-clipart.png")
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example7"&gt&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example7"></div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example8 {
+    padding:30px;
+    background-image:url("img/scenery-clipart.png")
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="div-example8"&gt
+    This paragraph has a background image.
+    This paragraph has a background image.
+    This paragraph has a background image.
+    This paragraph has a background image.
+    This paragraph has a background image.
+    This paragraph has a background image.
+    This paragraph has a background image.
+&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="div-example8">
+                    This paragraph has a background image.
+                    This paragraph has a background image.
+                    This paragraph has a background image.
+                    This paragraph has a background image.
+                    This paragraph has a background image.
+                    This paragraph has a background image.
+                    This paragraph has a background image.
+                </p>
+            </div>
+
+        </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example9 {
+    width:640px;
+    height:120px;
+    background-image:url("http://www.sololearn.com/uploads/css_logo.png");
+    background-repeat:repeat-x;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example9"&gt&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example9"></div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example10 {
+    width:120px;
+    height:640px;
+    background-image:url("http://www.sololearn.com/uploads/css_logo.png");
+    background-repeat:repeat-y;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example10"&gt&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example10"></div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example11 {
+    background-image:url("http://www.sololearn.com/uploads/css_logo.png");
+    background-repeat:repeat-x;
+}
+
+.div-example12 {
+    background-image:url("http://www.sololearn.com/uploads/css_logo.png");
+    background-repeat:inherit;
+    margin-top:100px;
+    padding:50px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example11"&gt
+    This is the parent.
+    &ltp class="div-example12"&gtThis is some paragraph.&lt/p&gt
+&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example11">
+                    This is the parent.
+                    <p class="div-example12">This is some paragraph.</p>
+                </div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example13 {
+    width:500px;
+    height:500px;
+    background-image:url("http://www.sololearn.com/uploads/css_logo.png");
+    background-attachment:fixed;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example13"&gt&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example13"></div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.div-example14 {
+    width:250px;
+    height:250px;
+    background-image:url("http://www.sololearn.com/uploads/css_logo.png");
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="div-example14"&gt&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="div-example14"></div>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 19: LISTS
+
+#################################################################
+--><hr />
+        <div id="section_19">
+            <h1>Lists</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+ol.lower-alpha {
+    list-style-type:lower-alpha;
+}
+
+ul.circle {
+    list-style-type:circle;
+}
+
+ul.square {
+    list-style-type:square;
+}
+
+<span class="reference_header">HTML:</span>
+&ltol class="lower-alpha"&gt
+    &ltli&gtRed&lt/li&gt
+    &ltli&gtGreen&lt/li&gt
+    &ltli&gtBlue&lt/li&gt
+&lt/ol&gt
+
+&ltul class="circle"&gt
+    &ltli&gtRed&lt/li&gt
+    &ltli&gtGreen&lt/li&gt
+    &ltli&gtBlue&lt/li&gt
+&lt/ul&gt
+
+&ltul class="square"&gt
+    &ltli&gtRed&lt/li&gt
+    &ltli&gtGreen&lt/li&gt
+    &ltli&gtBlue&lt/li&gt
+&lt/ul&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <ol class="lower-alpha">
+                    <li>Red</li>
+                    <li>Green</li>
+                    <li>Blue</li>
+                </ol>
+
+                <ul class="circle">
+                    <li>Red</li>
+                    <li>Green</li>
+                    <li>Blue</li>
+                </ul>
+
+                <ul class="square">
+                    <li>Red</li>
+                    <li>Green</li>
+                    <li>Blue</li>
+                </ul>
+            </div>
+
+
+
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+ul.img {
+    list-style-image: url("http://www.sololearn.com/images/bullet.jpg");
+    list-style-position: inside;
+}
+
+ul.img2 {
+    list-style-image: none;
+    list-style-position: outside;
+}
+
+<span class="reference_header">HTML:</span>
+&ltul class="img"&gt
+    &ltli&gtRed&lt/li&gt
+    &ltli&gtGreen&lt/li&gt
+    &ltli&gtBlue&lt/li&gt
+&lt/ul&gt
+
+&ltul class="img2"&gt
+    &ltli&gtRed&lt/li&gt
+    &ltli&gtGreen&lt/li&gt
+    &ltli&gtBlue&lt/li&gt
+&lt/ul&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <ul class="img">
+                    <li>Red</li>
+                    <li>Green</li>
+                    <li>Blue</li>
+                </ul>
+
+                <ul class="img2">
+                    <li>Red</li>
+                    <li>Green</li>
+                    <li>Blue</li>
+                </ul>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 20: TABLES
+
+#################################################################
+--><hr />
+        <div id="section_20">
+            <h1>Tables</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.table-example {
+    border-collapse: separate;
+    border-spacing: 20px 40px;
+}
+
+<span class="reference_header">HTML:</span>
+&lttable class="table-example" border="1"&gt
+    &lttr&gt
+        &lttd&gtRed&lt/td&gt
+        &lttd&gtGreen&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+        &lttd&gtBlue&lt/td&gt
+        &lttd&gtYellow&lt/td&gt
+    &lt/tr&gt
+&lt/table&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <table class="table-example" border="1">
+                    <tr>
+                        <td>Red</td>
+                        <td>Green</td>
+                    </tr>
+                    <tr>
+                        <td>Blue</td>
+                        <td>Yellow</td>
+                    </tr>
+                </table>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.table-example2 {
+    caption-side: top;
+}
+
+<span class="reference_header">HTML:</span>
+&lttable class="table-example2" border="1"&gt
+    &ltcaption style="text-align: left;"&gtColors&lt/caption&gt
+    &lttr&gt
+        &lttd&gtRed&lt/td&gt
+        &lttd&gtGreen&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+        &lttd&gtBlue&lt/td&gt
+        &lttd&gtYellow&lt/td&gt
+    &lt/tr&gt
+&lt/table&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <table class="table-example2" border="1">
+                    <caption style="text-align: left;">Colors</caption>
+                    <tr>
+                        <td>Red</td>
+                        <td>Green</td>
+                    </tr>
+                    <tr>
+                        <td>Blue</td>
+                        <td>Yellow</td>
+                    </tr>
+                </table>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.table-example3 {
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+.table-example3 td {
+    border: 1px solid orange;
+}
+
+<span class="reference_header">HTML:</span>
+&lttable class="table-example3" border="1"&gt
+    &lttr&gt
+        &lttd&gtRed&lt/td&gt
+        &lttd&gtGreen&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+        &lttd&gtBlue&lt/td&gt
+        &lttd&gt&lt/td&gt
+    &lt/tr&gt
+&lt/table&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <table class="table-example3" border="1">
+                    <tr>
+                        <td>Red</td>
+                        <td>Green</td>
+                    </tr>
+                    <tr>
+                        <td>Blue</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.table-example4 {
+    border-collapse: separate;
+    width: 100%;
+    border: 1px solid grey;
+    table-layout: auto;
+}
+
+.table-example5 {
+    border-collapse: separate;
+    width: 100%;
+    border: 1px solid grey;
+    table-layout: fixed;
+}
+
+<span class="reference_header">HTML:</span>
+&lttable class="table-example4"&gt
+    &lttr&gt
+        &lttd width="10%" style="border: 1px solid red; color: red"&gt500.000.000.000.000&lt/td&gt
+        &lttd width="90%" style="border: 1px solid green; color: green"&gt20.000&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+        &lttd style="border: 1px solid blue; color: blue"&gtBlue&lt/td&gt
+        &lttd style="border: 1px solid yellow; color: yellow"&gtYellow&lt/td&gt
+    &lt/tr&gt
+&lt/table&gt
+
+&lttable class="table-example5"&gt
+    &lttr&gt
+        &lttd width="10%" style="border: 1px solid red; color: red"&gt500.000.000.000.000&lt/td&gt
+        &lttd width="90%" style="border: 1px solid green; color: green"&gt20.000&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+        &lttd style="border: 1px solid blue; color: blue"&gtBlue&lt/td&gt
+        &lttd style="border: 1px solid yellow; color: yellow"&gtYellow&lt/td&gt
+    &lt/tr&gt
+&lt/table&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <table class="table-example4">
+                    <tr>
+                        <td width="10%" style="border: 1px solid red; color: red">500.000.000.000.000</td>
+                        <td width="90%" style="border: 1px solid green; color: green">20.000</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid blue; color: blue">Blue</td>
+                        <td style="border: 1px solid yellow; color: yellow">Yellow</td>
+                    </tr>
+                </table>
+
+                <table class="table-example5">
+                    <tr>
+                        <td width="10%" style="border: 1px solid red; color: red">500.000.000.000.000</td>
+                        <td width="90%" style="border: 1px solid green; color: green">20.000</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid blue; color: blue">Blue</td>
+                        <td style="border: 1px solid yellow; color: yellow">Yellow</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 21: LINK STYLES
+
+#################################################################
+--><hr />
+        <div id="section_21">
+            <h1>Link Styles</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+a:hover {
+    color: red;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+<span class="reference_header">HTML:</span>
+&lta href="Home.html" target="_blank"&gtHome&lt/a&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <a href="Home.html" target="_blank">Home</a>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 22: DISPLAY STYLES
+
+#################################################################
+--><hr />
+        <div id="section_22">
+            <h1>Display Styles</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+span.block {
+    display: block;
+}
+
+<span class="reference_header">HTML:</span>
+&ltspan class="block"&gtline 1.&lt/span&gt
+&ltspan class="block"&gtline 2.&lt/span&gt
+&ltspan class="block"&gtline 3.&lt/span&gt
+&ltspan class="block"&gtline 4.&lt/span&gt
+&ltspan class="block"&gtline 5.&lt/span&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <span class="block">line 1.</span>
+                <span class="block">line 2.</span>
+                <span class="block">line 3.</span>
+                <span class="block">line 4.</span>
+                <span class="block">line 5.</span>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.inline {
+    display: inline;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="inline"&gtline 1.&lt/p&gt
+&ltp class="inline"&gtline 2.&lt/p&gt
+&ltp class="inline"&gtline 3.&lt/p&gt
+&ltp class="inline"&gtline 4.&lt/p&gt
+&ltp class="inline"&gtline 5.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="inline">line 1.</p>
+                <p class="inline">line 2.</p>
+                <p class="inline">line 3.</p>
+                <p class="inline">line 4.</p>
+                <p class="inline">line 5.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.display-none {
+    display: none;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="display-none"&gtthis text will not display.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="display-none">this text will not display.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+div.hidden {
+    visibility: hidden;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="hidden"&gtthis div will not display.&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="hidden">this div will not display.</div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+div.display-hidden {
+    display: none;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="display-hidden"&gtthis div will not display.&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="display-hidden">this div will not display.</div>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 23: ELEMENT POSITION
+
+#################################################################
+--><hr />
+        <div id="section_23">
+            <h1>Element Position</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.position_static {
+    position: static;
+    top: 30px;
+    right: 5px;
+    color: red;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gtParagraph with no position.&lt/p&gt
+&ltp&gtParagraph with no position.&lt/p&gt
+&ltp&gtParagraph with no position.&lt/p&gt
+&ltp&gtParagraph with no position.&lt/p&gt
+&ltp class="position_static"&gtThis paragraph has a static position.&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p>Paragraph with no position.</p>
+                <p>Paragraph with no position.</p>
+                <p>Paragraph with no position.</p>
+                <p>Paragraph with no position.</p>
+                <p class="position_static">This paragraph has a static position.</p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.position_fixed {
+    position: fixed;
+    top: 30px;
+    right: 5px;
+    color: red;
+}
+
+<span class="reference_header">HTML:</span>
+(no output)
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+                (no output)
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+p.position_relative {
+    border: 1px black solid;
+    height: 200px;
+}
+
+span.pos_relative {
+    background: green;
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp class="position_relative"&gt
+    This is some paragraph with &ltspan class="pos_relative"&gtspan&lt/span&gt inside it.
+    This is some paragraph with &ltspan class="pos_relative"&gtspan&lt/span&gt inside it.
+    This is some paragraph with &ltspan class="pos_relative"&gtspan&lt/span&gt inside it.
+&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p class="position_relative">
+                    This is some paragraph with <span class="pos_relative">span</span> inside it.
+                    This is some paragraph with <span class="pos_relative">span</span> inside it.
+                    This is some paragraph with <span class="pos_relative">span</span> inside it.
+                </p>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 24: FLOAT
+
+#################################################################
+--><hr />
+        <div id="section_24">
+            <h1>Float</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+img.float {
+    float: right;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gt
+    &ltimg class="float" src="http://www.sololearn.com/uploads/css_logo.png"/&gt
+    This paragraph has an image that is floated to the &ltstrong&gtright.&lt/strong&gt
+    It is highly recommended to add a margin to images so that the text does
+    not get too close to the image. If you want your text to be easily read,
+    you should alsays add a few pixels between words and borders, images,
+    and other content.
+&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p>
+                    <img class="float" src="http://www.sololearn.com/uploads/css_logo.png"/>
+                    This paragraph has an image that is floated to the <strong>right.</strong>
+                    It is highly recommended to add a margin to images so that the text does
+                    not get too close to the image. If you want your text to be easily read,
+                    you should alsays add a few pixels between words and borders, images,
+                    and other content.
+                </p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+img.float2 {
+    float: left;
+    width: 120px;
+    float: left;
+}
+
+<span class="reference_header">HTML:</span>
+&ltp&gt
+    &ltimg class="float2" src="http://www.sololearn.com/uploads/css_logo.png"/&gt
+    This paragraph has an image that is floated to the &ltstrong&gtleft.&lt/strong&gt
+    It is highly recommended to add a margin to images so that the text does
+    not get too close to the image. If you want your text to be easily read,
+    you should alsays add a few pixels between words and borders, images,
+    and other content.
+&lt/p&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <p>
+                    <img class="float2" src="http://www.sololearn.com/uploads/css_logo.png"/>
+                    This paragraph has an image that is floated to the <strong>left.</strong>
+                    It is highly recommended to add a margin to images so that the text does
+                    not get too close to the image. If you want your text to be easily read,
+                    you should alsays add a few pixels between words and borders, images,
+                    and other content.
+                </p>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+img.float {
+    float: right;
+}
+
+<span class="reference_header">HTML:</span>
+This paragraph is above the div element and is not affected by the float right property
+&ltbr /&gt&ltbr /&gt
+&ltdiv class="float"&gt&ltimg src="http://www.sololearn.com/uploads/css_logo.png"/&gt&lt/div&gt
+This paragraph comes after the div element and is affected by the float right property.
+&ltbr /&gt&ltbr /&gt
+This paragraph also comes after the div element and is affected by the float right property.
+&ltbr /&gt&ltbr /&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                This paragraph is above the div element and is not affected by the float right property
+                <br /><br />
+                <div class="float"><img src="http://www.sololearn.com/uploads/css_logo.png"/></div>
+                This paragraph comes after the div element and is affected by the float right property.
+                <br /><br />
+                This paragraph also comes after the div element and is affected by the float right property.
+                <br /><br />
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.clear {
+    clear: both;
+}
+
+<span class="reference_header">HTML:</span>
+This paragraph is above the div element and is not affected by the float right property
+&ltbr /&gt&ltbr /&gt
+&ltdiv class="float"&gt&ltimg src="http://www.sololearn.com/uploads/css_logo.png"/&gt&lt/div&gt
+This paragraph comes after the div element and is affected by the float right property.
+&ltbr /&gt&ltbr class="clear" /&gt
+This paragraph is out of the floating group and is not affected by the float right property.
+&ltbr /&gt&ltbr /&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                This paragraph is above the div element and is not affected by the float right property
+                <br /><br />
+                <div class="float"><img src="http://www.sololearn.com/uploads/css_logo.png"/></div>
+                This paragraph comes after the div element and is affected by the float right property.
+                <br /><br class="clear" />
+                This paragraph is out of the floating group and is not affected by the float right property.
+                <br /><br />
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 25: OVERFLOW
+
+#################################################################
+--><hr />
+        <div id="section_25">
+            <h1>Overflow</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.overflow {
+    width: 150px;
+    height: 150px;
+    background-color: LightBlue;
+    float: left;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv style="height: 600px"&gt
+    &ltdiv class="overflow"&gt
+        This text is inside the div element, which has a blue
+        background color and is floated to the left.
+        We set a specific height and width for the div element, and as you can see,
+        the content cannot fit.
+    &lt/div&gt
+&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+                <div style="height: 600px">
+                    <div class="overflow">
+                        This text is inside the div element, which has a blue
+                        background color and is floated to the left.
+                        We set a specific height and width for the div element, and as you can see,
+                        the content cannot fit.
+                    </div>
+                </div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.overflow2 {
+    width: 150px;
+    height: 150px;
+    background-color: LightBlue;
+    float: left;
+    overflow: scroll;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv style="height: 300px"&gt
+    &ltdiv class="overflow2"&gt
+        This text is inside the div element, which has a blue
+        background color and is floated to the left.
+        We set a specific height and width for the div element, and as you can see,
+        the content cannot fit.
+    &lt/div&gt
+&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div style="height: 300px">
+                    <div class="overflow2">
+                        This text is inside the div element, which has a blue
+                        background color and is floated to the left.
+                        We set a specific height and width for the div element, and as you can see,
+                        the content cannot fit.
+                    </div>
+                </div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.overflow3 {
+    width: 150px;
+    height: 150px;
+    background-color: LightBlue;
+    float: left;
+    overflow: hidden;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv style="height: 300px"&gt
+    &ltdiv class="overflow3"&gt
+        This text is inside the div element, which has a blue
+        background color and is floated to the left.
+        We set a specific height and width for the div element, and as you can see,
+        the content cannot fit.
+    &lt/div&gt
+&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div style="height: 300px">
+                    <div class="overflow3">
+                        This text is inside the div element, which has a blue
+                        background color and is floated to the left.
+                        We set a specific height and width for the div element, and as you can see,
+                        the content cannot fit.
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+<!--
+#################################################################
+
+        SECTION 26: Z-INDEX
+
+#################################################################
+--><hr />
+        <div id="section_26">
+            <h1>Z-Index</h1>
+
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.blue {
+    background-color: #8EC4D0;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    color: #FFF;
+}
+
+.red {
+    background-color: #FF4D4D;
+    position: relative;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    color: #FFF;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="blue"&gtBlue&lt/div&gt
+&ltdiv class="red"&gtRed&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="blue">Blue</div>
+                <div class="red">Red</div>
+            </div>
+<!--###########################-->
+            <div class="bordered">
+<span class="display_code">
+<span class="reference_header">CSS:</span>
+.blue2 {
+    z-index: 3;
+    position: relative;
+    background-color: #8EC4D0;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    color: #FFF;
+}
+
+.red2 {
+    z-index: 2;
+    position: relative;
+    background-color: #FF4D4D;
+    width: 120px;
+    height: 120px;
+    color: #FFF;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+<span class="reference_header">HTML:</span>
+&ltdiv class="blue2"&gtBlue&lt/div&gt
+&ltdiv class="red2"&gtRed&lt/div&gt
+
+<span class="reference_header">OUTPUT:</span>
+</span>
+
+                <div class="blue2">Blue</div>
+                <div class="red2">Red</div>
+            </div>
+        </div>
+<!--###########################-->
+        <div id="nav">
+            <p class="topofpage"><a href="Basic CSS.html">Top of Page</a></p>
+        </div>
+    </body>
+</html>
